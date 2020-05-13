@@ -1,0 +1,35 @@
+{
+    "author": "Federico Muzzo",
+    "dependencies": {
+        "@turf/turf": "^5.1.6",
+        "jest": "^25.1.0",
+        "mapbox-gl": "^1.8.1",
+        "use-debounce": "^3.3.0"
+    },
+    "description": "Utilities for dealing with GeoJson",
+    "devDependencies": {
+        "@babel/core": "^7.8.3",
+        "@babel/preset-env": "^7.8.3",
+        "@types/jest": "^25.1.1",
+        "babel-jest": "^25.1.0",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.4.2",
+        "html-webpack-plugin": "^3.2.0",
+        "prop-types": "^15.7.2",
+        "raw-loader": "^4.0.0",
+        "style-loader": "^1.1.3",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1"
+    },
+    "license": "ISC",
+    "name": "geo-features-utils",
+    "scripts": {
+        "build": "webpack --config webpack.conf.js",
+        "start:dev": "webpack-dev-server --config webpack.conf.js",
+        "start:list": "webpack-dev-server --config examples/List/webpack.conf.js",
+        "start:draw": "webpack-dev-server --config examples/DrawList/webpack.conf.js",
+        "test": "jest"
+    },
+    "version": "0.0.0"
+}
